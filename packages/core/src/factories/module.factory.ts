@@ -1,4 +1,4 @@
-import { Router, Express } from 'express';
+import { Router } from 'express';
 
 type ModuleProperty = { path: string, bundler: (router: Router) => void }
 type ModuleFactory = (app: Router) => void;

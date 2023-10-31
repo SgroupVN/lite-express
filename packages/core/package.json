@@ -1,7 +1,7 @@
 {
   "name": "@se/core",
   "version": "0.0.3",
-  "description": "> TODO: description",
+  "description": "Core module",
   "author": "justin <dangphu241299@gmail.com>",
   "homepage": "https://github.com/SgroupVN/@slite-core#readme",
   "license": "MIT",
@@ -26,5 +26,6 @@
   },
   "peerDependencies": {
     "express": "4.17.3"
-  }
+  },
+  "gitHead": "2c50bbc92ed3e27dfa0e80d48de221caed4a1c01"
 }
