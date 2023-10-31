@@ -1,6 +1,6 @@
 {
   "name": "@sgroupjs/core",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Core module",
   "author": "justin <dangphu241299@gmail.com>",
   "homepage": "https://github.com/SgroupVN/@sgroup#readme",
@@ -22,7 +22,7 @@
     "directory": "packages/core"
   },
   "bugs": {
-    "url": "https://github.com/SgroupVN/@se/issues"
+    "url": "https://github.com/SgroupVN/@sgroupjs/issues"
   },
   "peerDependencies": {
     "express": "4.17.3"
