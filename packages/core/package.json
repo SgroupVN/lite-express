@@ -1,0 +1,32 @@
+{
+  "name": "@se/core",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "justin <dangphu241299@gmail.com>",
+  "homepage": "https://github.com/SgroupVN/@slite-core#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SgroupVN/@se.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/SgroupVN/@se/issues"
+  },
+  "peerDependencies": {
+    "express": "4.17.3"
+  }
+}

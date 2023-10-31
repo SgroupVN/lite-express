@@ -1,0 +1,61 @@
+{
+  "name": "micro-ecm-typescript-starter",
+  "version": "1.0.0",
+  "description": "Micro-ecm TypeScript starter repository",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start:prod": "node dist/main",
+    "lint": "eslint '{src,apps,libs,test}/**/*.ts' --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./e2e/jest-e2e.json"
+  },
+  "dependencies": {
+    "@micro-ecm/common": "1.0.4",
+    "@micro-ecm/core": "^1.0.5",
+    "@micro-ecm/utils": "1.0.6",
+    "reflect-metadata": "0.1.13",
+    "rimraf": "3.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.13",
+    "@types/jest": "27.4.1",
+    "@types/node": "16.11.26",
+    "@types/supertest": "2.0.11",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "jest": "27.5.1",
+    "prettier": "2.5.1",
+    "supertest": "6.1.6",
+    "ts-jest": "27.0.7",
+    "ts-loader": "9.2.8",
+    "ts-node": "10.4.0",
+    "tsconfig-paths": "3.11.0",
+    "typescript": "4.3.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
