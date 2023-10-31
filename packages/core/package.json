@@ -1,6 +1,6 @@
 {
   "name": "@sgroupjs/core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Core module",
   "author": "justin <dangphu241299@gmail.com>",
   "homepage": "https://github.com/SgroupVN/@sgroup#readme",
@@ -10,7 +10,9 @@
     "src": "src",
     "test": "__tests__"
   },
-  "files": ["*"],
+  "files": [
+    "*"
+  ],
   "publishConfig": {
     "access": "public"
   },
