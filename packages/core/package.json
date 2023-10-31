@@ -10,10 +10,7 @@
     "src": "src",
     "test": "__tests__"
   },
-  "files": [
-    "./**/*.d.ts",
-    "./**/*.js"
-  ],
+  "files": ["*"],
   "publishConfig": {
     "access": "public"
   },
