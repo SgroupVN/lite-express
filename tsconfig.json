@@ -17,29 +17,11 @@
       "es7"
     ],
     "paths": {
-      "@micro-ecm/common": [
-        "./packages/common"
-      ],
-      "@micro-ecm/common/*": [
-        "./packages/common/*"
-      ],
-      "@micro-ecm/core": [
+      "@sgroup/core": [
         "./packages/core"
       ],
-      "@micro-ecm/core/*": [
+      "@sgroup/core/*": [
         "./packages/core/*"
-      ],
-      "@micro-ecm/utils": [
-        "./packages/utils"
-      ],
-      "@micro-ecm/utils/*": [
-        "./packages/utils/*"
-      ],
-      "@micro-ecm/microservices": [
-        "./packages/microservices"
-      ],
-      "@micro-ecm/microservices/*": [
-        "./packages/microservices/*"
       ]
     }
   },

@@ -1,9 +1,9 @@
 {
   "name": "@se/core",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "Core module",
   "author": "justin <dangphu241299@gmail.com>",
-  "homepage": "https://github.com/SgroupVN/@slite-core#readme",
+  "homepage": "https://github.com/SgroupVN/@sgroup#readme",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SgroupVN/@se.git",
+    "url": "git+https://github.com/SgroupVN/@sgroup.git",
     "directory": "packages/core"
   },
   "bugs": {
