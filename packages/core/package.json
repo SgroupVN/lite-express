@@ -18,10 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SgroupVN/@se.git"
-  },
-  "scripts": {
-    "build": "tsc"
+    "url": "git+https://github.com/SgroupVN/@se.git",
+    "directory": "packages/core"
   },
   "bugs": {
     "url": "https://github.com/SgroupVN/@se/issues"

@@ -21,6 +21,8 @@ yarn-error.log
 /**/npm-debug.log
 /packages/**/.npmignore
 /packages/**/LICENSE
+*.tsbuildinfo
+.npmrc
 
 # example
 /quick-start

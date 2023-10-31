@@ -1,6 +1,6 @@
 {
-  "name": "@workspace/root",
-  "version": "0.1.0",
+  "name": "@se/core",
+  "version": "0.1.1",
   "private": false,
   "license": "MIT",
   "author": "Justin Dang",
@@ -8,13 +8,16 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "clean": "gulp clean:bundle",
-    "postbuild:dev": "gulp move",
-    "build:dev": "gulp build --dist node_modules/@se",
+    "build": "tsc -b -v packages",
+    "postbuild": "npm run move:node_modules",
+    "move:node_modules": "gulp move:node_modules",
+    "build:prod": "tsc -b -v packages",
+    "clean": "tsc -b --clean packages",
     "prebuild:prod": "npm run clean",
-    "build:prod": "gulp build",
-    "test": "lerna run test",
     "publish": "lerna publish"
+  },
+  "dependencies": {
+    "express": "4.17.3"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.3",
