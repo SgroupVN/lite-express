@@ -1,4 +1,4 @@
-export const createHandler = (fn: Function) =>
+export const createController = (fn: Function) =>
     function asyncUtilWrap(...args) {
         const fnReturn = fn(...args);
         const next = args[args.length - 1];
