@@ -13,6 +13,7 @@
     "build:prod": "tsc -b -v packages",
     "clean": "tsc -b --clean packages",
     "prebuild:prod": "npm run clean",
+    "prepublish": "npm run build:prod",
     "publish": "lerna publish"
   },
   "dependencies": {
