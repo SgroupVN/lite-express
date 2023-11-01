@@ -16,7 +16,9 @@
     "publish": "lerna publish"
   },
   "dependencies": {
-    "express": "4.17.3"
+    "express": "4.17.3",
+    "method-override": "^3.0.0",
+    "http-status": "^1.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.3",

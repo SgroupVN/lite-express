@@ -1,7 +1,5 @@
 import { Router } from 'express';
-
-type ModuleProperty = { path: string, bundler: (router: Router) => void }
-type ModuleFactory = (app: Router) => void;
+import { ModuleFactory, ModuleProperty } from '../interfaces/module.interface';
 
 export function createModuleFactory({ path, bundler }: ModuleProperty): ModuleFactory {
     const router = Router();
