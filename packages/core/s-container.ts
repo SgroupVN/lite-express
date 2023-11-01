@@ -1,6 +1,6 @@
 import type { Express } from 'express';
 import { json, urlencoded } from 'express';
-import methodOverride from 'method-override';
+import * as methodOverride from 'method-override';
 import { ModuleFactory } from './interfaces/module.interface';
 import { httpExceptionHandler } from './outbound/http-exception-filter';
 import { notFoundHandler } from './outbound/not-found.filter';
