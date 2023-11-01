@@ -5,18 +5,26 @@ import { ModuleFactory } from './interfaces/module.interface';
 import { httpExceptionHandler } from './outbound/http-exception-filter';
 import { notFoundHandler } from './outbound/not-found.filter';
 
-type SContainer = {
+type SContainerPayload = {
   app: Express;
   rootModule: ModuleFactory
 }
 
-export function createSExpressContainer({ app, rootModule }: SContainer): void {
+type SContainer = {
+  run: () => void
+}
+
+export function createSExpressContainer({ app, rootModule }: SContainerPayload): SContainer {
   app.use(json());
   app.use(urlencoded({ extended: false }));
   app.use(methodOverride('X-HTTP-Method-Override'));
 
   rootModule(app);
 
-  app.use(httpExceptionHandler);
-  app.use(notFoundHandler);
+  return {
+    run: () => {
+      app.use(httpExceptionHandler);
+      app.use(notFoundHandler);
+    }
+  }
 }
