@@ -11,7 +11,8 @@
     "test": "__tests__"
   },
   "files": [
-    "*"
+    "**.d.ts",
+    "**.js"
   ],
   "publishConfig": {
     "access": "public"
