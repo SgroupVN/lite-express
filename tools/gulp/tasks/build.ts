@@ -6,6 +6,7 @@ import * as log from 'fancy-log';
 const packages: Map<string, Project> = new Map(
     [
       ['core', createProject('packages/core/tsconfig.json')],
+      ['swagger', createProject('packages/swagger/tsconfig.json')],
   ],
 )
 

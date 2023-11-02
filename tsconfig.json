@@ -22,6 +22,12 @@
       ],
       "@sgroup/core/*": [
         "./packages/core/*"
+      ],
+      "@sgroup/swagger": [
+        "./packages/swagger"
+      ],
+      "@sgroup/swagger/*": [
+        "./packages/swagger/*"
       ]
     }
   },
