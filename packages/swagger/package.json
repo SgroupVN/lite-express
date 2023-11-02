@@ -1,0 +1,28 @@
+{
+  "name": "@sgroupjs/swagger",
+  "version": "0.0.0",
+  "description": "Swagger module",
+  "author": "justin <dangphu241299@gmail.com>",
+  "homepage": "https://github.com/SgroupVN/@sgroup#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "**/**.d.ts",
+    "**/**.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SgroupVN/@sgroupjs.git",
+    "directory": "packages/swagger"
+  },
+  "bugs": {
+    "url": "https://github.com/SgroupVN/@sgroupjs/issues"
+  }
+}
